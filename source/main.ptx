@@ -51,87 +51,8 @@
 
       <section xml:id="section-title">
         <title>Section title</title>
-        <p>Hello, let's try some <webwork/> features.</p>
-        
-        <exercise>
-            <title>Answer Type Variety</title>
-            <idx><h><webwork/></h><h>answer types</h></idx>
-            <introduction>
-              <p>
-                This problem demonstrates that <webwork/> can process many kinds of answers.
-              </p>
-            </introduction>
-            <webwork>
-              <pg-code>
-                Context("Numeric");
-                $f = Formula("sqrt(x)");
-                $derivative = Formula("1/(2sqrt(x))");
-                $popup = PopUp(['?','power','exponential','linear','quadratic'],1);
-                $radio = RadioButtons([
-                  'It shares ancestry with "radius", as in the radius of a circle.',
-                  'It shares ancestry with "radish", a vegetable.',
-                  'It shares ancestry with "radler", a mixture of beer and grapefruit soda.',
-                ],1);
-                Context("LimitedRadical");
-                $a = Formula("2sqrt(3)");
-                Context("LimitedNumeric");
-                $b = Real(sqrt(12));
-                Context("Interval");
-                $domain = Interval("[0,inf)");
-                Context("Point");
-                $point = Point("(4,2)");
-                Context("RestrictedDomains");
-                $restricted = Formula("x, x >= 0");
-              </pg-code>
-              <statement>
-                <p>
-                  Consider the function <m>f</m> defined by <m>f(x)=<var name="$f"/></m>.
-                  <ol>
-                    <li>
-                      <p>
-                        The exact value of <m>f(12)</m> is <var name="$a" width="10"/>
-                        and a decimal approximation for this is <var name="$b" width="10"/>.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        The domain of this function, in interval notation, is <var name="$domain" width="10"/>.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        The graph of <m>y=<var name="$f"/></m> intersects the graph of <m>y=6-x</m> at <var name="$point" width="10"/>.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        <m>\frac{d}{dx}<var name="$f"/>={}</m> <var name="$derivative" width="10"/>.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        The formula for <m>f(x)^2</m>, including its restricted domain, is <var name="$restricted" width="20"/>.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        <m>f</m> is a <var name="$popup" form="popup"/> function.
-                      </p>
-                    </li>
-                    <li>
-                      <p>
-                        Which is true of the word <q>radical</q>?
-                      </p>
-                      <p>
-                        <var name="$radio" form="buttons"/>
-                      </p>
-                    </li>
-                  </ol>
-                </p>
-              </statement>
-            </webwork>
-          </exercise>
-
+        <p>Hello.</p>
+          
       </section>
 
     </chapter>
