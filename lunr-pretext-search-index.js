@@ -16,7 +16,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.1",
   "title": "Section title",
-  "body": " Section title  Hello  "
+  "body": " Section title  Hello, let's try some WeBWorK features.  Answer Type Variety WeBWorK answer types  This problem demonstrates that WeBWorK can process many kinds of answers.   "
+},
+{
+  "id": "exercise-1",
+  "level": "2",
+  "url": "section-title.html#exercise-1",
+  "type": "Checkpoint",
+  "number": "1.1.1",
+  "title": "Answer Type Variety.",
+  "body": "Answer Type Variety WeBWorK answer types  This problem demonstrates that WeBWorK can process many kinds of answers.  "
 },
 {
   "id": "colophon-2",
